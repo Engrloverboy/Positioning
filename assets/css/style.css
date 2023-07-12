@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.all-box {
+  position: relative;
+  margin: 20px;
+}
+.f-box,
+.s-box,
+.t-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.s-box {
+  border: 1px solid blue;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.t-box {
+  background-color: blueviolet;
+  position: absolute;
+  left: 235px;
+  top: 153px;
+}
+
+@media (max-width: 500px) {
+  .f-box,
+  .s-box,
+  .t-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+  }
+
+  .s-box {
+    left: 62px;
+    top: 51px;
+  }
+  .t-box {
+    left: 127px;
+    top: 75px;
+  }
+}
